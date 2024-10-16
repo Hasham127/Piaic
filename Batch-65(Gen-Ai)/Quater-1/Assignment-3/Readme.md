@@ -1,1 +1,81 @@
+# This Assignment is the same as that of "2" but in this assignment we use functions.
 
+# Qno.1---Calculate your age based on the current year and your birth year.
+def age():
+
+    birthYear =int(input("Enter Your Birth Year: "))              
+    currentYear = int(input("Enter Current Year : "))
+    result:int = "Your Age is: ",(currentYear-birthYear)
+    return result 
+ 
+
+# Qno.2---Write a program that calculates the area of a rectangle using length and width variables.
+def area_rec():
+
+    lenght = int(input("Enter Lenght of rectangle: "))
+    width = int(input("Enter the width of rectangle: "))
+    Ans = "The Area of rectangle is: "+str(lenght*width) 
+    return Ans
+
+
+# Qno.3---Write a program that calculates the area of a circle.
+def radius():
+
+    radius = int(input("Enter the radius of circle: "))
+    Answer = "The area of circle is: "+str(3.141592*radius)
+    return Answer
+
+#  Qno.4---Create a program that converts a temperature from Fahrenheit to Celsius 
+#          and vice versa using a variable.
+
+
+
+def converter():
+
+    print("Temperature converter Celsius to Fahrenheit")
+    celsius = int(input("Enter the temperature in 'Celsius': "))
+    Ans1 = "The temperature in 'Fahrenheit': "+str((celsius*9/5)+32)
+    print(Ans1)
+    print("Temperature converter Fahrenheit to Celsius")
+    fahrenheit = int(input("Enter the temperature in 'Fahrenheit': "))
+    Ans2 = "The temperature in Celsius is: "+str((fahrenheit-32)*5/9)
+    return Ans2
+
+
+# Qno.5---Convert a given number of seconds into minutes and seconds using variables
+def converter_2():
+
+    print("Second to Minute Converter")
+    time = int(input("Enter your time in minutes: "))
+    print("Your time in seconds is: ",(time*60))
+
+
+# Qno.6---Write a program that calculates the percentage.
+def percent():
+
+    print("Percentage Calculator")
+    number1=int(input("Enter number of which you find percentage: "))
+    number2 = int(input("Enter total amount: "))
+    percen = "The required percentage is: ",(number1*100/(number2)) 
+    return percen
+
+# Qno.7---Write a program that calculates the BMI using height (in meters) 
+#         and weight (in kilograms) variables.
+def bmi():
+
+    height = float(input("Enter your height in metres: "))
+    weight = int(input("Enter your weight in kilograms: "))
+    print("Your BMI is: ",weight/height**2,"kg/m2")
+
+# Qno.8---Write a program that calculates the volume of a cylinder using the formula .
+def hei():
+
+    height = int(input("Enter the height of cylinder: "))
+    radius = int(input("Enter the radius of cylinder: "))
+    pi = 3.14
+    print("The volume of cylinder is: ",pi*radius**2*height)
+
+# tri:int = percent()
+# print(tri)
+
+bmi()
